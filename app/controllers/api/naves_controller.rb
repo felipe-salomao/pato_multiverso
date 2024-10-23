@@ -11,7 +11,7 @@ class Api::NavesController < Api::ApplicationController
   end
 
   def create
-    Nave.create!(permitted_params)
+    Naves::Create.new(permitted_params).execute
 
     head :created
   end
@@ -23,6 +23,6 @@ class Api::NavesController < Api::ApplicationController
   end
 
   def permitted_params
-    params.permit(:tamanho, :cor, :local, :armamentos, :combustivel, :tripulantes, :saude_tripulantes, :grau_avaria, :potencial, :periculosidade)
+    params.permit(:tamanho, :cor, :local, :armamentos, :combustivel, :tripulantes, :saude_tripulantes, :grau_avaria, :periculosidade, potencial: [])
   end
 end

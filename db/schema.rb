@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_10_22_153345) do
+ActiveRecord::Schema.define(version: 2024_10_23_125101) do
 
   create_table "naves", force: :cascade do |t|
     t.integer "tamanho"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2024_10_22_153345) do
     t.integer "periculosidade"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "classificacao"
   end
 
 end
