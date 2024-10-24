@@ -1,7 +1,7 @@
 class Nave < ApplicationRecord
   include NaveConstants
 
-  validates :tamanho, :cor, :combustivel, :periculosidade, :grau_avaria, :local, :potencial, presence: true
+  validates :tamanho, :combustivel, :periculosidade, :grau_avaria, :local, :potencial, presence: true
 
   enum tamanho: { pequena: 0, media: 1, grande: 2, colossal: 3 }
 
