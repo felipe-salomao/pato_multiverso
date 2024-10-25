@@ -1,4 +1,6 @@
 class Api::NavesController < Api::ApplicationController
+  attr_accessor :nave
+
   before_action :set_nave, only: %i[ show ]
 
   def index
@@ -8,12 +10,13 @@ class Api::NavesController < Api::ApplicationController
   end
 
   def show
+    render json: nave, serializer: Api::NaveSerializer, status: :ok
   end
 
   def create
-    Naves::Create.new(permitted_params).execute
+    nave = Naves::Create.new(permitted_params).execute
 
-    head :created
+    render json: { id: nave.id }, status: :created
   end
 
   private

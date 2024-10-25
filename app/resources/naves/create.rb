@@ -9,6 +9,8 @@ class Naves::Create
     nave = Nave.create!(params)
 
     classificar_nave(nave)
+
+    nave
   end
 
   private

@@ -1,6 +1,6 @@
 class Api::NaveSerializer < ActiveModel::Serializer
   attributes :id, :cor, :tamanho, :combustivel, :periculosidade, :grau_avaria, :local, :potencial,
-             :armamentos, :tripulantes, :saude_tripulantes
+             :armamentos, :tripulantes, :saude_tripulantes, :classificacao
 
   def potencial
     return if object.potencial.blank?
