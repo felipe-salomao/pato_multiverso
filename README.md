@@ -23,6 +23,40 @@ Este projeto foi criado utilizando Ruby on Rails.
   </tr>
 </table>
 
+## Instalações necessárias: Linux
+
+```bash
+# instalar rbenv para gerenciar diferentes versões do ruby
+sudo apt update
+sudo apt install -y rbenv
+
+# instalar o plugin ruby-build
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# instalar ruby na mesma versão do projeto
+rbenv install 3.0.6
+
+# definir a versão do ruby para o projeto
+rbenv local 3.0.6
+
+# verificar a versão atual do ruby
+ruby -v
+```
+
+## Instalações necessárias: Windows
+
+```bash
+# baixar RubyInstaller 
+Site Oficial: https://rubyinstaller.org/downloads/archives/
+
+OBS: escolher a versão (Ruby+Devkit 3.0.6-1)
+
+# vídeo explicando como instalar
+Canal Code To Need: https://www.youtube.com/watch?v=ip-49zjoOcI&ab_channel=CodeToNeed
+
+# verificar a versão atual do ruby
+ruby -v
+```
 
 ## Configurações iniciais para executar o projeto
 
