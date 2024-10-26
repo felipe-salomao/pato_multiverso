@@ -1,4 +1,4 @@
-# PATO MULTIVERSO
+# PATO MULTIVERSO API
 
 Este projeto foi criado utilizando Ruby on Rails.
 
