@@ -1,24 +1,46 @@
-# README
+# PATO MULTIVERSO
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este projeto foi criado utilizando Ruby on Rails.
 
-Things you may want to cover:
+<table>
+  <tr>
+    <td>Ruby version</td>
+    <td>
+      3.0.6
+    </td>
+  </tr>
+  <tr>
+    <td>Rails version</td>
+    <td>
+      6.1.7
+    </td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>
+      SQLite
+    </td>
+  </tr>
+</table>
 
-* Ruby version
 
-* System dependencies
+## Configurações iniciais para executar o projeto
 
-* Configuration
+```bash
+# instalar Ruby on Rails dependencies
+bundle install
 
-* Database creation
+# instalar Node dependencies
+yarn install / npm install
 
-* Database initialization
+# Criar os bancos de dados
+rails db:create
 
-* How to run the test suite
+# Criar as tabelas
+rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+# Execute o projeto
+rails s
+```
 
-* Deployment instructions
-
-* ...
+Abra o navegador no endereço `http://localhost:3001`
